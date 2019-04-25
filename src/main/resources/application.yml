@@ -1,0 +1,19 @@
+#本地开发环境配置
+server:
+  port: 8080
+  context-path: /uat/ialmmodel/mini
+
+debug: true
+logging:
+  level:
+    org.springframework.web: info
+    com.github.binarywang.demo.wx.miniapp: debug
+    cn.binarywang.wx.miniapp: debug
+wx:
+  miniapp:
+    configs:
+        - appid: wxd245d1e07cef8a2c#微信小程序的appid
+          secret: 8f3d0d9b770f08ce795d955b9cea2256#微信小程序的Secret
+          token: #微信小程序消息服务器配置的token
+          aesKey: #微信小程序消息服务器配置的EncodingAESKey
+          msgDataFormat: JSON
